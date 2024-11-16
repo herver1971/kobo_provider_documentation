@@ -32,7 +32,7 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = []
 
-autoapi_dirs = ["../../kobo-provider/kobo_provider"]
+autoapi_dirs = [os.path.abspath("../../kobo-provider/kobo_provider")]
 autoapi_ignore = [
     "**/docs/**",
     "**/.circleci/**",
