@@ -388,8 +388,10 @@
 <a class="viewcode-back" href="../../../autoapi/kobo_provider/operators/kobotoolbox/index.html#kobo_provider.operators.kobotoolbox.KoboToGeoNodeOperator.process_attachments">[docs]</a>
     <span class="k">def</span> <span class="nf">process_attachments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">attachment_columns</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Process each row to handle attachment columns in the DataFrame. </span>
+<span class="sd">        Process each row to handle attachment columns in the DataFrame.</span>
+
 <span class="sd">        For simple attachment columns (strings), replace the value with the download URL.</span>
+
 <span class="sd">        For multiple attachment columns (lists), replace each value with the corresponding download URL, separated by spaces.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;_attachments&quot;</span><span class="p">):</span>
