@@ -45,7 +45,9 @@ Module Contents
    .. py:method:: process_attachments(row, df, attachment_columns)
 
       Process each row to handle attachment columns in the DataFrame.
+
       For simple attachment columns (strings), replace the value with the download URL.
+
       For multiple attachment columns (lists), replace each value with the corresponding download URL, separated by spaces.
 
 
