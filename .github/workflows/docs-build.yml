@@ -36,6 +36,9 @@ jobs:
         cd docs
         make clean
 
+    - name: Verificar directorio autoapi
+      run: ls -la /home/runner/work/kobo_provider_documentation/kobo_provider_documentation/kobo-provider/kobo_provider
+
     - name: Build HTML Documentation
       run: |
         source env/bin/activate
