@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "GeoNode Cloud Core"
+project = "Kobo Provider"
 copyright = "2024, Kan Territory & IT"
 author = "Kan Territory & IT"
 release = "1.0.0"
@@ -32,7 +32,7 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = []
 
-autoapi_dirs = ["../../geonode-cloud-core"]
+autoapi_dirs = ["../../kobo-provider/kobo_provider"]
 autoapi_ignore = [
     "**/docs/**",
     "**/.circleci/**",
