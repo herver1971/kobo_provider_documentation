@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Kobo Provider"
+project = "Kobo Provider Documentation"
 copyright = "2024, Kan Territory & IT"
 author = "Kan Territory & IT"
 release = "1.0.0"
@@ -32,7 +32,7 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = []
 
-autoapi_dirs = ["../../kobo-provider/kobo_provider"]
+autoapi_dirs = ["../../kobo-provider/kobo_provider/"]
 autoapi_ignore = [
     "**/docs/**",
     "**/.circleci/**",
