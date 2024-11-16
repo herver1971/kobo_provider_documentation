@@ -18,7 +18,8 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
       with:
-        submodules: recursive
+        submodules: recursive  # Clona los submódulos recursivamente
+        fetch-depth: 0         # Obtén todo el historial para evitar problemas con los submódulos
 
     - name: Set up Python
       uses: actions/setup-python@v5
