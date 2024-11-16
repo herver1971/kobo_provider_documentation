@@ -1,0 +1,31 @@
+kobo_provider.example_dags.example_dag
+======================================
+
+.. py:module:: kobo_provider.example_dags.example_dag
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   kobo_provider.example_dags.example_dag.default_args
+   kobo_provider.example_dags.example_dag.dag
+   kobo_provider.example_dags.example_dag.start
+   kobo_provider.example_dags.example_dag.process_form
+   kobo_provider.example_dags.example_dag.end
+
+
+Module Contents
+---------------
+
+.. py:data:: default_args
+
+.. py:data:: dag
+
+.. py:data:: start
+
+.. py:data:: process_form
+
+.. py:data:: end
+
