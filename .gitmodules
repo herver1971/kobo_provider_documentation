@@ -1,0 +1,3 @@
+[submodule "kobo-provider"]
+	path = kobo-provider
+	url = https://github.com/herver1971/kobo-provider.git
