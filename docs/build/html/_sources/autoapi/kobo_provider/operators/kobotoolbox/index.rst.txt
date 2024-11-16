@@ -1,0 +1,68 @@
+kobo_provider.operators.kobotoolbox
+===================================
+
+.. py:module:: kobo_provider.operators.kobotoolbox
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   kobo_provider.operators.kobotoolbox.KoboToGeoNodeOperator
+
+
+Module Contents
+---------------
+
+.. py:class:: KoboToGeoNodeOperator(kobo_conn_id: str = None, formid: int = None, form_id_string: str = None, postgres_conn_id: str = None, geonode_conn_id: str = None, columns: list = None, dataset_name: str = None, mode: str = 'append', *args, **kwargs)
+
+   Bases: :py:obj:`airflow.models.BaseOperator`
+
+
+   This operator integrates KoboToolBox with GeoNode, automating the migration of georeferenced forms to GeoNode.
+
+
+   .. py:attribute:: template_fields
+      :value: ('kobo_conn_id', 'formid', 'form_id_string', 'postgres_conn_id', 'geonode_conn_id', 'columns',...
+
+
+
+   .. py:method:: execute(context=None)
+
+
+   .. py:method:: parse_repeat(column, df)
+
+      This method process each row from repeat-type column (not include attachments columns) of a DataFrame and parse it to be displayed correctly in GeoNode.
+
+      :returns: String with each response formated correctly.
+
+
+
+   .. py:method:: process_repeat_geometry_column(df, column)
+
+
+   .. py:method:: process_attachments(row, df, attachment_columns)
+
+      Process each row to handle attachment columns in the DataFrame.
+      For simple attachment columns (strings), replace the value with the download URL.
+      For multiple attachment columns (lists), replace each value with the corresponding download URL, separated by spaces.
+
+
+
+   .. py:method:: parse_attachments(field) -> str
+
+      This method process each row from attachments column of a DataFrame and parse it to be displayed correctly in GeoNode.
+
+      :returns: String with each URL formated correctly.
+
+
+
+   .. py:method:: create_geometry(row)
+
+      This method process each row from coordinates column of a DataFrame and identifies which geometry type is and parse it to a standard geometric field.
+
+      :returns: Standard geometric object.
+
+
+
